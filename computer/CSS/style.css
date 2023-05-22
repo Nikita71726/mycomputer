@@ -1,0 +1,218 @@
+.body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.header {
+    padding: 0px;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 100%;
+  }
+
+.header__cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.img__logo {
+    width: 140px;
+    padding-left: 20px;
+}
+
+.nav {
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: rgb(148, 5, 231);
+    font-weight: bold;
+    padding-right: 80px;
+    transition: color 0.3s linear;
+    list-style: none;
+}
+
+.nav__link:hover {
+    color:aqua;
+}
+
+.header{
+    position: relative;
+}
+
+.swiper-slide {
+    margin-top: 25px;
+}
+
+.swiper {
+    width: 500px;
+    height: 700px;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.swiper-button-prev {
+    margin-top: -100px;
+}
+
+.swiper-button-next {
+    margin-top: -100px;
+}
+
+.swiper-pagination {
+    margin-bottom: 100px;
+}
+
+.header__down {
+    position: relative;
+}
+
+.header__title {
+    color: rgb(255, 0, 255);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    padding-top: 40px;
+}
+
+.header__subtitle {
+    color: rgb(177, 18, 177);
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.card_holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kard__image {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.card__title {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px; 
+}
+ 
+.card__desc {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px; 
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Поплавок четыре колонки бок о бок */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Удалите лишние левые и правые поля, из-за заполнения */
+  .row {
+    margin-left: 20%;
+}
+  
+  /* Очистить поплавки после столбцов */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Отзывчивые столбцы */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Стиль контейнера карточек */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: rgb(148, 5, 231);
+    font-weight: bold;
+    padding-right: 80px;
+    transition: color 0.3s linear;
+    list-style: none;
+    
+    
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    text-decoration: none;
+    color: rgb(148, 5, 231);
+    font-weight: bold;
+    padding-right: 80px;
+    transition: color 0.3s linear;
+    list-style: none;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-decoration: none;
+    color: rgb(148, 5, 231);
+    font-weight: bold;
+    padding-right: 80px;
+    transition: color 0.3s linear;
+    list-style: none;
+}
+.acord {
+    padding-top: 40px;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #44444453;
+}
+.card_catalog {
+    width: 50%;
+}

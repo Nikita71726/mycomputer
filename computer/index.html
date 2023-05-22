@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThunderPC</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <header class="header">
+        <div  class="cont header__cont">        
+        <a class="logo header__logo">
+            <img src="img/header/PClogo.png" alt="logotype pc" class="img__logo">
+        </a> 
+        <nav class="nav">
+            <a class="nav__link" href="#"><li>Главная</li></a>
+            <a class="nav__link" href="#"><li>Каталог</li></a>
+            <a class="nav__link" href="#"><li>О нас</li></a>
+            <a class="nav__link" href="#"><li>Наш персонал</li></a>
+            <a class="nav__link" href="#"><li>Отзывы</li></a>
+            <a class="nav__link" href="#"><li>Новости</li></a>
+            <a class="nav__link" href="#"><li>Частые вопросы</li></a>
+            <a class="nav__link" href="#"><li>Партнеры</li></a>
+        </nav>
+    </div>
+    </header>
+    <div class="headr__down">
+        <div class="header__title">
+            ЭТО THUNDER PC
+        </div>
+        <div class="header__subtitle">
+            Ремонт, обслуживание и продажа ПК!
+        </div>
+    </div>
+    </div>
+
+
+   
+    </div>
+    </div>
+    <main>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/main/pc1.png" class="kartinka1" alt="">
+              <div class="centered"><h2>Centered</h2></div>
+            </div>
+            <div class="swiper-slide"><img src="img/main/pc2.png" class="kartinka2" alt="">
+              <div class="centered"><h2>Centered</h2></div>
+            </div>
+            <div class="swiper-slide"><img src="img/main/pc3.png" class="kartinka" alt=""></div>
+            <div class="swiper-slide"><img src="img/main/pc4.png" class="kartinka" alt=""></div>
+            <div class="swiper-slide"><img src="img/main/pc5.png" class="kartinka" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <div class="card">
+                <div class="card_catalog"></div>
+                <h3>Карточка 1</h3>
+                <p>Некоторый текст</p>
+                <p>Некоторый текст</p>
+              </div>
+            </div>
+          
+            <div class="column">
+              <div class="card">
+                <h3>Карточка 2</h3>
+                <p>Некоторый текст</p>
+                <p>Некоторый текст</p>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                <h3>Карточка 3</h3>
+                <p>Некоторый текст</p>
+                <p>Некоторый текст</p>
+              </div>
+            </div>
+          </div>
+    </main>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: {
+        delay: 3000,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        });
+    </script> 
+    <section class="acord">
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+  <footer>
+    <div  class="cont header__cont">        
+      <a class="logo header__logo">
+          <img src="img/header/PClogo.png" alt="logotype pc" class="img__logo">
+      </a> 
+      <nav class="nav">
+          <a class="nav__link" href="#"><li>Частые вопросы</li></a>
+          <a class="nav__link" href="#"><li>Партнеры</li></a>
+      </nav>
+  </div>
+  </footer>
+</body>
+
+</html>
